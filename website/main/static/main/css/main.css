@@ -1,0 +1,9 @@
+body {
+    background-color: #89d3e8
+}
+
+main .about-me  {
+    text-align: center;
+    margin-top: 200px;
+}
+main .about-me p{font-size: 200px;}
