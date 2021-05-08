@@ -3,8 +3,17 @@
 {% block title %}Новости{% endblock %}
 
 {% block content %}
-    <div class="about-me">
-        <h1>Новости</h1>
-        <p>Сафин Денис:)</p>
+    <div class="news">
+        <h1>Новости на сайте</h1>
+        {% if news %}
+            {% for el in news %}
+                <div class="alert alert-dark">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет новостей!</p>
+        {% endif %}
     </div>
 {% endblock %}
