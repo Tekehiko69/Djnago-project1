@@ -18,3 +18,17 @@ main .alert-dark {
     margin: 20px 37%;
     text-align: center;
 }
+nav .btn-info {
+    margin-left: 25px;
+}
+
+form {
+    margin-left: 34%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+main .create-news{
+    text-align: center;
+
+}
