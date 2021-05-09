@@ -7,6 +7,10 @@
         <h1>{{ article.title }}</h1>
         <p>{{ article.full_text }}</p>
         <p>{{ article.date }}</p>
+        <a class="btn btn-primary" href="{% url 'news-page' %}">Вернуться назад</a>
+        <a  class="btn btn-danger" href="{% url 'delete-page' article.id %}">Удалить</a>
+        <a  class="btn btn-info" href="{% url 'update-page' article.id %}">Изменить </a>
+
 
     </div>
 {% endblock %}
