@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+    <div class="registration">
+        <h1>Создайте аккаунт</h1>
+        <p>Пожалуйста, заполните все поля для регистрации</p>
+        <form method="POST">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            <p><input type="submit" value="Создать свой аккаунт"></p>
+        </form>
+    </div>
+{% endblock %}
