@@ -37,6 +37,12 @@ main .create-news{
 
 }
 
+main .carousel-inner{
+    text-align: center;
+    width : 35%;
+    height: 40%;
+}
+
 main .user_login{
     text-align: center;
     margin-top: 30px;
